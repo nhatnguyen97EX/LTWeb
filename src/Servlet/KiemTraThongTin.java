@@ -106,7 +106,7 @@ public class KiemTraThongTin extends HttpServlet {
 		request.setAttribute("mess", mess);
 		response.getWriter().print(mess);
 		if (reset != null)
-			getServletContext().getRequestDispatcher("/DangKy.jsp").forward(request, response);
+			getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
 		else if (ok) {
 			String diaChi;
 			diaChi = duong + " " + huyen + " " + tinh + " " + quocGia;
